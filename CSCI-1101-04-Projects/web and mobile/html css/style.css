@@ -1,0 +1,17 @@
+p
+{
+    color: royalblue;
+}
+
+.header-background
+{
+    background-color: lightcoral;
+    color: rgb(40, 40, 40);
+    text-decoration: underline;
+}
+
+#bigger-font
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
