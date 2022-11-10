@@ -14,9 +14,10 @@ system_clock = pygame.time.Clock()
 game_characteristics = {
     "sky": {
         "color": (135, 206, 235)
-    }
+    },
+
     "grass": {
-        "color": (0, 255, 0)
+        "color": (0, 255, 0),
         "position": {
             "y": 0.8 * monitor_display[1]
         }
@@ -38,6 +39,9 @@ while game_running_flag:
 
     # running game mechanics
     game_display.fill(game_characteristics["sky"]["color"])
+
+    # create grass
+    pygame.draw.rect(game_display, game_characteristics["grass"]["color"], pygame.Rect(0, game_characteristics["grass"]["position"]["y"], monitor_display[0], monitor_display[1]- game_characteristics["grass"]["position"]["y"]))
 
     pygame.display.update()
 
