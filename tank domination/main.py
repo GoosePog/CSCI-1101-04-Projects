@@ -15,6 +15,12 @@ game_characteristics = {
     "sky": {
         "color": (135, 206, 235)
     }
+    "grass": {
+        "color": (0, 255, 0)
+        "position": {
+            "y": 0.8 * monitor_display[1]
+        }
+    }
 }
 
 # game logic
@@ -31,7 +37,7 @@ while game_running_flag:
         break
 
     # running game mechanics
-    game_display.fill(game_characteristics["sky"["color"]])
+    game_display.fill(game_characteristics["sky"]["color"])
 
     pygame.display.update()
 
