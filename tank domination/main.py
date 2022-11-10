@@ -37,12 +37,12 @@ while game_running_flag:
 
         break
 
-    # running game mechanics
     game_display.fill(game_characteristics["sky"]["color"])
 
     # create grass
     pygame.draw.rect(game_display, game_characteristics["grass"]["color"], pygame.Rect(0, game_characteristics["grass"]["position"]["y"], monitor_display[0], monitor_display[1]- game_characteristics["grass"]["position"]["y"]))
 
+    # running game mechanics
     pygame.display.update()
 
     system_clock.tick(30)
